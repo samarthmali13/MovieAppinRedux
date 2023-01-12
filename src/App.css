@@ -6,6 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
+.main-box {
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.cus-card{
+  margin: 10px ;
+  border:1px solid red ;
+  max-height:600px ;
+
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

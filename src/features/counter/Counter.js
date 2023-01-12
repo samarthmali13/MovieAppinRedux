@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
+  decrementByAmount,
   increment,
   incrementByAmount,
   incrementAsync,
@@ -60,6 +61,12 @@ export function Counter() {
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => dispatch(decrementByAmount(incrementValue))}
+        >
+          Decrement by Amount
         </button>
       </div>
     </div>
